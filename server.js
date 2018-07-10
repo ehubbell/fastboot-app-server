@@ -27,7 +27,11 @@ let notifier = new S3Notifier({
 
 let server = new FastBootAppServer({
   downloader: downloader,
-  notifier: notifier
+  notifier: notifier,
+  gzip: true,
+  host: '0.0.0.0',
+  port: 4000,
+  chunkedResponse: true
 });
 
 server.start();
