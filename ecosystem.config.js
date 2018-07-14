@@ -2,9 +2,10 @@ module.exports = {
   apps : [{
     name: "fastboot",
     script: "./server.js",
-    log_date_format: 'DD-MM-YYYY HH:mm Z',
+    log_date_format: 'MM-DD-YYYY HH:mm Z',
     max_memory_restart: '500M',
     instances: 'max',
+    merge_logs: true,
     env: {
       NODE_ENV: "development",
     },
