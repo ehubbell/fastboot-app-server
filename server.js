@@ -4,10 +4,10 @@ const S3Downloader = require('fastboot-s3-downloader');
 const S3Notifier = require('fastboot-s3-notifier');
 const FastBootAppServer = require('fastboot-app-server');
 
-const S3_BUCKET    = process.env.FASTBOOT_S3_BUCKET;
-const S3_KEY       = process.env.FASTBOOT_S3_KEY;
-const AWS_KEY    = process.env.AWS_KEY;
-const AWS_SECRET_KEY      = process.env.AWS_SECRET_KEY;
+const S3_BUCKET = process.env.FASTBOOT_S3_BUCKET;
+const S3_KEY = process.env.FASTBOOT_S3_KEY;
+const AWS_KEY = process.env.AWS_KEY;
+const AWS_SECRET_KEY = process.env.AWS_SECRET_KEY;
 
 const MY_GLOBAL = 'MY GLOBAL';
 
