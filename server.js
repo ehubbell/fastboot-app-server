@@ -36,7 +36,7 @@ let server = new FastBootAppServer({
 
 server.start();
 
-// // Local Testing
+// Local Testing
+// npm install
 // distPath: '../../joyrides/joyrides-web/dist',
-// host: '0.0.0.0',
-// port: 4000,
+// node server.js
