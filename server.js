@@ -9,8 +9,6 @@ const S3_KEY = process.env.FASTBOOT_S3_KEY;
 const AWS_KEY = process.env.AWS_KEY;
 const AWS_SECRET_KEY = process.env.AWS_SECRET_KEY;
 
-const MY_GLOBAL = 'MY GLOBAL';
-
 let downloader = new S3Downloader({
   bucket: S3_BUCKET,
   key: S3_KEY,
@@ -35,8 +33,3 @@ let server = new FastBootAppServer({
 });
 
 server.start();
-
-// Local Testing
-// npm install
-// distPath: '../../joyrides/joyrides-web/dist',
-// node server.js
