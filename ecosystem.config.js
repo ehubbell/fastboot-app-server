@@ -1,10 +1,12 @@
 module.exports = {
   apps : [{
-    name: "fastboot",
-    script: "/var/app/fastboot-app-server/server.js",
-    log_date_format: 'MM-DD-YYYY HH:mm Z',
-    max_memory_restart: '100M',
-    instances: 'max',
-    merge_logs: true,
-  }]
-}
+    name: 'fastboot',
+    script: 'npm',
+    cwd: '/var/app/fastboot-app-server',
+    args: 'start',
+    instances: 1,
+    autorestart: true,
+    watch: false,
+    max_memory_restart: '1G',
+  }],
+};
